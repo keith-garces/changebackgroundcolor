@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <script>
+        function changeColor() {
+            var color = document.getElementById("colorInputColor").value;
+            document.body.style.backgroundColor = color;
+            document.getElementById("colorInputText").value = color;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Change Background Color Via Text</h1>
+    <input type="text" id="colorInputText" placeholder="Enter a color">
+    <input type="color" id="colorInputColor">
+    <input type="button" id="colorButton" value="Click To Change Color" onclick="changeColor()">
+    
+</body>
+
+</html>
